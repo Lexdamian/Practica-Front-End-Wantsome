@@ -1,0 +1,70 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <title>Form 1</title>
+    </head>
+    <body>
+        <h2>Insert personal data:</h2>
+        <form action="/url-trimitere-formular">
+            <label for='name'>Name:</label>
+            <input type='text' name='name' placeholder="Name" required>
+            <br>
+            <br>
+            <label for='name'>Surname:</label>
+            <input type='text' name='name' placeholder="Surname" required>
+            <br>
+            <br>
+            <label for='gender'>Gender:</label>
+            <input type='radio' name='gender' value='male'>Male <input type='radio' name='gender' value='female'>Female 
+            <br>
+            <br>
+            <label for='age'>Age:</label>
+            <input type='number' name='age' value='18' min='18' max ='85'>
+            <br>
+            <br>
+            <label for='country'>Country:</label>
+            <select name='country'>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Italy</option>
+                <option>Hungary</option>
+                <option>Romania</option>
+                <option>Greece</option>
+            </select>
+            <br>
+            <br>
+            <label for='city'>City:</label>
+            <select name='city'>
+                <option>Berlin</option>
+                <option>Lyon</option>
+                <option>Rome</option>
+                <option>Budapest</option>
+                <option>Iasi</option>
+                <option>Athens</option>
+            </select>
+            <br>
+            <br>
+            <label for='adress'>Adress:</label>
+            <input type='text' name='adress' placeholder="Adress">
+            <br>
+            <br>
+            <label for='po'>OP:</label>
+            <input type='number' name='po'>
+            <br>
+            <br>
+            <label for='email'>Email:</label>
+            <input type='email' name='email' required>
+            <br>
+            <br>
+            <textarea name='message' rows='10' col='30'>Message:</textarea>
+            <br>
+            <br>
+            <label for='addFile'>Add File:</label>
+            <input type="file" name='addFile'>
+            <br>
+            <br>
+            <input type='submit' method='POST'> <input type='reset' value='Reset'> 
+        </form>
+
+    </body>
+</html>
