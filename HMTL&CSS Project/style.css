@@ -199,6 +199,9 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .articleWrapper article {
+    width: auto;
+  }
   .articleWrapper article:nth-child(1) {
     border: 0;
   }
