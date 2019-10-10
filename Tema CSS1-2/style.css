@@ -1,0 +1,37 @@
+body {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 700px;
+    width: auto;
+}
+
+form {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    border: dotted 2px green;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+}
+
+form>label:nth-child(1) {
+    font-size: 25px;
+    color: blueviolet;
+}
+
+input[type="submit"] {
+    color: red;
+}
+
+form {
+    line-height: 30px;
+    background: lightgray;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+    flex-grow: 1;
+}

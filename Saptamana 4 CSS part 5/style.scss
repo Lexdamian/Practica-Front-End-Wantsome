@@ -1,0 +1,19 @@
+$backgroundColor: gray;
+$backgrondColor2: fuchsia;
+$borderColor: #3399ff;
+$divWidth: 300px;
+$divHeight: 300px;
+div {
+    width: $divWidth;
+    height: $divHeight;
+    border: solid 2px;
+    background-color: $backgroundColor;
+    border-color: $borderColor;
+}
+
+div:nth-of-type(2) {
+    width: $divWidth;
+    height: $divHeight;
+    background-color: $backgrondColor2;
+    border: 1px solid $borderColor;
+}

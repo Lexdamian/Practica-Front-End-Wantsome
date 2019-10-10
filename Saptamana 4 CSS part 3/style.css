@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+}
+
+.header {
+    display: flex;
+    align-self: center;
+    background-color: purple;
+    text-align: center;
+}
+
+.leftSidebar {
+    background-color: blue;
+    width: 150px;
+    color: white;
+    text-align: center;
+}
+
+.rightSidebar {
+    background-color: green;
+    width: 150px;
+    color: white;
+    text-align: center;
+}
+
+.mainContent {
+    background-color: lightgray;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    align-self: center;
+    background-color: brown;
+    text-align: center;
+}

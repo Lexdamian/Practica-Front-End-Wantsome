@@ -1,0 +1,14 @@
+.same-style h1,
+.same-style p {
+    font-size: 25px;
+    color: blue;
+}
+
+a[href]{
+    color: red;
+}
+
+span {
+    font-family: 'Times New Roman', Times, serif;
+    color: sienna;
+}
