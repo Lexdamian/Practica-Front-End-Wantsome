@@ -1,0 +1,24 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list a[href] {
+    color: red;
+}
+
+div {
+    border: 1px solid black;
+}
+
+#thirdDiv a[href] {
+    color: red;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
