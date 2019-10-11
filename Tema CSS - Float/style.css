@@ -1,0 +1,22 @@
+body {
+    width: 1200px;
+}
+
+nav {
+    float: left;
+    border: 1px solid red;
+    width: 130px;
+}
+
+section {
+    border: 1px solid black;
+    padding: 3px;
+    overflow: auto;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    padding-top: 15px;
+    width: 100%;
+}
