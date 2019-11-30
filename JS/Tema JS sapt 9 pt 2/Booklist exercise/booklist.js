@@ -42,9 +42,7 @@ books[1].url = "https://www.emag.ro/mindset-the-new-psychology-of-success-carol-
 (() => {
   books.forEach(element => {
     let list = document.body.innerHTML += '<ul></ul>'; 
-    list = document.body.innerHTML += `<li class = "liElem"><a href =${element.url} target =_blank>${element.title}, by ${element.author}.</a></li>`;
-    const ifRead = () => document.body.list.style.color = "red";
-    addEventListener('click', ifRead);
+    list = document.body.innerHTML += `<li><a href =${element.url} target =_blank>${element.title}, by ${element.author}.</a></li>`;
   }); 
   })();
 
