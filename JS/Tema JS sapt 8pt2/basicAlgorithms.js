@@ -90,4 +90,4 @@ const plusSign = str => {
     if (strArr[i] !== "+") return false; 
   } return true;
 }
-console.log(plusSign("+ab+c+d+e"));
+// console.log(plusSign("+ab+c+d+e"));

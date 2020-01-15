@@ -1,0 +1,49 @@
+.logo {
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 25 25 25 25;
+    border-bottom: 1px solid #333;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;   
+
+    input {
+        height: 20px;
+        align-self: center;
+    }
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+    li:first-child, li:nth-child(2) {
+        margin-right: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

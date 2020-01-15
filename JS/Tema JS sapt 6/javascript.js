@@ -7,11 +7,11 @@
 // If the first value is 2 the function will return "The person verified is female."
 // We create a second function to get CNP value from input and then display it in console. 
 
-var gender = function (cnpInput) {
-  var firstDigit = cnpInput.toString().charAt(0);
-  if (firstDigit !== "1" && firstDigit !== "2") { return "CNP-ul introdus nu este valid" };
-  if (firstDigit === "1") { return "Persoana verificata are sexul masculin" };
-  if (firstDigit === "2") { return "Persoana verificata are sexul feminin" };
+var gender = function(cnpInput) {
+    var firstDigit = cnpInput.toString().charAt(0);
+    if (firstDigit !== "1" && firstDigit !== "2") { return "CNP-ul introdus nu este valid" };
+    if (firstDigit === "1") { return "Persoana verificata are sexul masculin" };
+    if (firstDigit === "2") { return "Persoana verificata are sexul feminin" };
 }
 
 console.log(gender(2454353234));
@@ -27,32 +27,24 @@ console.log(gender(2454353234));
 
 
 
-var grade = function (points) {
-  var mark;
-  if (points >= 1 && points <= 3) {
-    mark = "E";
-    return "Calificativul corespunzator punctajului " + points + " este " + mark;
-  }
-
-  else if (points > 3 && points <= 6) {
-    mark = "D";
-    return "Calificativul corespunzator punctajului " + points + " este " + mark;
-  }
-
-  else if (points >= 7 && points <= 8) {
-    mark = "B";
-    return "Calificativul corespunzator punctajului " + points + " este " + mark;
-  }
-
-  else if (points == 9) {
-    mark = "A";
-    return "Calificativul corespunzator punctajului " + points + " este " + mark;
-  }
-
-  else if (points == 10) {
-    mark = "A+";
-    return "Calificativul corespunzator punctajului " + points + " este " + mark;
-  }
+var grade = function(points) {
+    var mark;
+    if (points >= 1 && points <= 3) {
+        mark = "E";
+        return "Calificativul corespunzator punctajului " + points + " este " + mark;
+    } else if (points > 3 && points <= 6) {
+        mark = "D";
+        return "Calificativul corespunzator punctajului " + points + " este " + mark;
+    } else if (points >= 7 && points <= 8) {
+        mark = "B";
+        return "Calificativul corespunzator punctajului " + points + " este " + mark;
+    } else if (points == 9) {
+        mark = "A";
+        return "Calificativul corespunzator punctajului " + points + " este " + mark;
+    } else if (points == 10) {
+        mark = "A+";
+        return "Calificativul corespunzator punctajului " + points + " este " + mark;
+    }
 }
 
 console.log(grade(10));
@@ -69,17 +61,17 @@ console.log(grade(10));
 // if the argument given to car1 exists in the object cars we will return "return "Marca " + carMake + " se produce in " + cars[carMake]";
 
 var cars = {
-  tesla: "Statele unite ale Americii",
-  volvo: "Suedia",
-  kia: "Korea",
-  toyota: "Japan",
-  bmw: "Germany",
-  dacia: "Romania"
+    tesla: "Statele unite ale Americii",
+    volvo: "Suedia",
+    kia: "Korea",
+    toyota: "Japan",
+    bmw: "Germany",
+    dacia: "Romania"
 }
 
-var car1 = function (carMake) {
-  if (!cars[carMake]) return "Marca " + carMake + " nu exista";
-  return "Marca " + carMake + " se produce in " + cars[carMake];
+var car1 = function(carMake) {
+    if (!cars[carMake]) return "Marca " + carMake + " nu exista";
+    return "Marca " + carMake + " se produce in " + cars[carMake];
 }
 console.log(car1("kia"));
 
@@ -92,23 +84,23 @@ console.log(car1("kia"));
 // we use if/else statements for each key in the object cars.
 // if the argument does not exists we return "Marca [marca] este necunoscuta"
 
-var car2 = function (carMake) {
-  var maker = carMake.toLowerCase();
-  if (maker === "tesla") {
-    return "Marca " + maker + " se produce in " + cars.tesla;
-  } else if (maker === "volvo") {
-    return "Marca " + maker + " se produce in " + cars.volvo;
-  } else if (maker === "kia") {
-    return "Marca " + maker + " se produce in " + cars.kia;
-  } else if (maker === "toyota") {
-    return "Marca " + maker + " se produce in " + cars.toyota;
-  } else if (maker === "bmw") {
-    return "Marca " + maker + " se produce in " + cars.bmw;
-  } else if (maker === "dacia") {
-    return "Marca " + maker + " se produce in " + cars.dacia;
-  } else {
-    return "Marca " + maker + " este necunoscuta.";
-  }
+var car2 = function(carMake) {
+    var maker = carMake.toLowerCase();
+    if (maker === "tesla") {
+        return "Marca " + maker + " se produce in " + cars.tesla;
+    } else if (maker === "volvo") {
+        return "Marca " + maker + " se produce in " + cars.volvo;
+    } else if (maker === "kia") {
+        return "Marca " + maker + " se produce in " + cars.kia;
+    } else if (maker === "toyota") {
+        return "Marca " + maker + " se produce in " + cars.toyota;
+    } else if (maker === "bmw") {
+        return "Marca " + maker + " se produce in " + cars.bmw;
+    } else if (maker === "dacia") {
+        return "Marca " + maker + " se produce in " + cars.dacia;
+    } else {
+        return "Marca " + maker + " este necunoscuta.";
+    }
 
 }
 console.log(car2("BMW3"));
@@ -122,30 +114,30 @@ console.log(car2("BMW3"));
 // we use switch cases for each key in the object cars.
 // if the argument does not exists we return "Marca [marca] este necunoscuta"
 
-var car3 = function (carMake) {
-  var maker2 = carMake.toLowerCase();
-  switch (maker2) {
-    case "tesla":
-      return "Marca " + maker2 + " se produce in " + cars.tesla;
-      break;
-    case "volvo":
-      return "Marca " + maker2 + " se produce in " + cars.volvo;
-      break;
-    case "kia":
-      return "Marca " + maker2 + " se produce in " + cars.kia;
-      break;
-    case "toyota":
-      return "Marca " + maker2 + " se produce in " + cars.toyota;
-      break;
-    case "bmw":
-      return "Marca " + maker2 + " se produce in " + cars.bmw;
-      break;
-    case "dacia":
-      return "Marca " + maker2 + " se produce in " + cars.dacia;
-      break;
-    default:
-      return "Marca " + maker2 + " este necunoscuta";
-  }
+var car3 = function(carMake) {
+    var maker2 = carMake.toLowerCase();
+    switch (maker2) {
+        case "tesla":
+            return "Marca " + maker2 + " se produce in " + cars.tesla;
+            break;
+        case "volvo":
+            return "Marca " + maker2 + " se produce in " + cars.volvo;
+            break;
+        case "kia":
+            return "Marca " + maker2 + " se produce in " + cars.kia;
+            break;
+        case "toyota":
+            return "Marca " + maker2 + " se produce in " + cars.toyota;
+            break;
+        case "bmw":
+            return "Marca " + maker2 + " se produce in " + cars.bmw;
+            break;
+        case "dacia":
+            return "Marca " + maker2 + " se produce in " + cars.dacia;
+            break;
+        default:
+            return "Marca " + maker2 + " este necunoscuta";
+    }
 }
 console.log(car3("Dacia"));
 
@@ -159,15 +151,15 @@ console.log(car3("Dacia"));
 
 
 var employees = [
-  { name: "John", salary: 20000 },
-  { name: "Danny", salary: 30500 },
-  { name: "Bekker", salary: 15000 }
+    { name: "John", salary: 20000 },
+    { name: "Danny", salary: 30500 },
+    { name: "Bekker", salary: 15000 }
 ];
 
-(function () {
-  return employees.sort(function (a, b) {
-    return(a.salary - b.salary);
-  })
+(function() {
+    return employees.sort(function(a, b) {
+        return (a.salary - b.salary);
+    })
 })();
 
 console.log(employees);
